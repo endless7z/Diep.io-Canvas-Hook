@@ -4,7 +4,7 @@ Used to edit the canvas in [diep.io](https;//diep.io). You can use it in your ta
 // @require https://raw.githubusercontent.com/endlessXD/Diep.io-Canvas-Hook/main/canvas-hook.js
 ```
 ## Events
-A list of events to listen for can be aquired using this code snippet:
+A list of events to listen for can be acquired using this code snippet:
 ```js
 Object.keys(CanvasRenderingContext2D.prototype);
 ```
