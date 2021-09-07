@@ -1,18 +1,4 @@
-// ==UserScript==
-// @name         Diep.io Canvas Hook
-// @author       endless
-// @version      2.0.2
-// @namespace    https://github.com/endlessXD
-// @description  Edit the canvas in diep.io
-// @icon         https://avatars.githubusercontent.com/u/73157473?v=4
-// @match        *://diep.io/*
-// @run-at       document-start
-// @grant        none
-// ==/UserScript==
-
-'use strict';
-
-window.CanvasHook = class {
+class CanvasHook {
   constructor() {
     this.listeners = new Map();
   }
