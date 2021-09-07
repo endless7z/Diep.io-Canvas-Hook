@@ -6,7 +6,7 @@ class CanvasHook {
   on(events, callback) {
     if (typeof events === 'string') events = [events];
 
-    const id = + Math.random().toString().slice(2);
+    const id = Math.random() * 10;
 
     this.listeners.set(id, '7z');
 
@@ -17,7 +17,7 @@ class CanvasHook {
   }
 
   once(event, callback) {
-    const id = + Math.random().toString().slice(2);
+    const id = Math.random() * 10;
 
     this.listeners.set(id, '7z');
 
