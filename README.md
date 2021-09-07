@@ -1,5 +1,8 @@
 # Diep.io Canvas Hook
-Used to edit the canvas in [diep.io](https;//diep.io)
+Used to edit the canvas in [diep.io](https;//diep.io). You can use it in your tampermonkey script like so
+```
+// @require https://raw.githubusercontent.com/endlessXD/Diep.io-Canvas-Hook/main/canvas-hook.js
+```
 ## Examples
 Replace all text with "lol"
 ```js
