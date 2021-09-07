@@ -30,7 +30,7 @@ Change the stroke color of everything to red
 ```js
 const Canvas = new CanvasHook();
 
-Canvas.on('strokeText', text => {
+Canvas.on('stroke', text => {
     text.element.strokeStyle = '#FFFFFF'; // turns stuff red
 });
 ```
