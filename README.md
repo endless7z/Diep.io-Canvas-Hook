@@ -1,6 +1,6 @@
 # Diep.io Canvas Hook
 Used to edit the canvas in [diep.io](https;//diep.io). You can use it in your tampermonkey script like so:
-```
+```js
 // @require https://raw.githubusercontent.com/endlessXD/Diep.io-Canvas-Hook/main/canvas-hook.js
 ```
 ## Events
