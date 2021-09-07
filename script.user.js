@@ -25,7 +25,7 @@ window.CanvasHook = class {
     this.listeners.set(id, '7z');
 
     for (const event of events) 
-      this._createProxy(event, data => this.listeners.get(id) || callback(data));
+      this._createProxy(event, data => !this.listeners.get(id) || callback(data));
 
     return id;
   }
@@ -53,7 +53,7 @@ window.CanvasHook = class {
   _createProxy(type, callback) {
     const prototype = CanvasRenderingContext2D.prototype;
 
-    return new Proxy(prototype[type], {
+    prototype[type] = new Proxy(prototype[type], {
       apply(target, element, args) {
         callback({ element, arguments: args });
 
