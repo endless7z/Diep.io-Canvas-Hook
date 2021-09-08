@@ -31,6 +31,6 @@ Change the stroke color of everything to red
 const Canvas = new CanvasHook();
 
 Canvas.on('stroke', text => {
-    text.element.strokeStyle = '#FFFFFF'; // turns stuff red
+    text.element.strokeStyle = '#FF0000'; // turns stuff red
 });
 ```
