@@ -25,6 +25,7 @@ Canvas.on(['fillText', 'strokeText'], text => {
     text.arguments[0] = 'lol'; // replaces all text with "lol"
 });
 ```
+![lol](./images/lol.png)
 ---
 Change the stroke color of everything to red
 ```js
@@ -34,3 +35,4 @@ Canvas.on('stroke', text => {
     text.element.strokeStyle = '#FF0000'; // turns stuff red
 });
 ```
+![stroke](./images/stroke.png)
