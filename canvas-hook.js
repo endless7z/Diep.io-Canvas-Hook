@@ -22,9 +22,11 @@ class CanvasHook {
     this.listeners.set(id, '7z');
 
     this._createProxy(event, data => {
-      if (this.listeners.get(id)) callback(data);
+      if (this.listeners.get(id)) {
+        callback(data);
 
-      this.off(id);
+        this.off(id);
+      }
     });
   }
 
